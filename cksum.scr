@@ -1,0 +1,7 @@
+#!/bin/csh -f
+
+foreach i ( `cat $1` )
+cksum $i
+end
+
+#last line

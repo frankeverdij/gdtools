@@ -1,0 +1,5 @@
+#!/bin/csh -f
+
+diff before after | grep nekoware | awk '{print $2}' > filelist.txt
+
+# last line

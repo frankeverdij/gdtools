@@ -1,0 +1,10 @@
+#!/bin/csh -f
+
+cd /home/DIST/nekoware/dual-mips3-mips4/relnotes_patches
+ls -1 ../*.tardist | awk '{split($1,s,"-"); print substr(s[1],9)}' > /tmp/.tmpharvest
+
+foreach i ( `cat /tmp/.tmpharvest` )
+cp ~/build/$i/neko_$i.txt .
+cp ~/build/$i/*.patch .
+end
+

@@ -1,0 +1,5 @@
+#!/bin/csh -f
+
+cat $1 | xargs rm
+
+#last line

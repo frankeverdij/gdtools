@@ -1,0 +1,1 @@
+find . \( -name "*.save" -o -name "*.orig" \) -exec csh -c 'diff -ru  $1 $1:r' '{}' \;
